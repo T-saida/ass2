@@ -1,4 +1,4 @@
-/* General reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,9 +24,7 @@ h2 {
   padding-bottom: 8px;
 }
 
-/* ==========================================
-   TASK 0: Navigation Bar (Flexbox)
-   ========================================== */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -44,7 +42,7 @@ h2 {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px; /* Flexbox spacing between links */
+  gap: 20px; 
 }
 
 .nav-links a {
@@ -57,13 +55,11 @@ h2 {
   color: #38bdf8;
 }
 
-/* ==========================================
-   TASK 1: Card Row (Flexbox)
-   ========================================== */
+
 .card-container {
   display: flex;
   gap: 20px;
-  align-items: stretch; /* Equal height */
+  align-items: stretch; 
 }
 
 .card {
@@ -78,7 +74,7 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Hover lift effect */
+  transform: translateY(-5px); 
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -96,7 +92,7 @@ h2 {
 }
 
 .card-body p {
-  flex-grow: 1; /* Pushes button to bottom */
+  flex-grow: 1; 
   margin: 10px 0 15px;
 }
 
@@ -113,9 +109,7 @@ h2 {
   background-color: #0056b3;
 }
 
-/* ==========================================
-   TASK 2: Page Layout with Grid Areas
-   ========================================== */
+
 .grid-page-container {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -134,9 +128,7 @@ h2 {
 .grid-main { grid-area: main; background: #93c5fd; color: #111; padding: 20px; }
 .grid-footer { grid-area: footer; background: #1d4ed8; color: white; padding: 20px; }
 
-/* ==========================================
-   TASK 3: Image Gallery (CSS Grid)
-   ========================================== */
+
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -170,12 +162,10 @@ h2 {
 }
 
 .gallery-item:hover .caption {
-  opacity: 1; /* Hover caption overlay */
+  opacity: 1; 
 }
 
-/* ==========================================
-   TASK 4: Portfolio Page (Flexbox + Grid)
-   ========================================== */
+
 .portfolio-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -194,7 +184,7 @@ h2 {
   padding: 15px;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  display: flex; /* Flexbox inside grid card */
+  display: flex; 
   flex-direction: column;
   justify-content: space-between;
 }
